@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+/* BOILERPLATE CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+/* COLOR VARIABLES */
+:root {
+  --main-color: #820000;
+  --main-color-2: #aa5656;
+}
+
+/* MAIN */
+#main {
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TRANSPARENT */
+#glass-box {
+  width: 85vw;
+  height: 80vh;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.427);
+  backdrop-filter: blur(15px);
+}
+
+/* TOP */
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5vw;
+  padding: 20px 50px;
+}
+#top h1 {
+  font-family: "Cookie", cursive;
+}
+#top i {
+  color: var(--main-color);
+  transition: 0.5s;
+}
+#top i:hover {
+  color: white;
+}
+/* TOP */
+
+/* CENTER */
+#center {
+  display: flex;
+  align-items: center;
+  margin: 40px 50px;
+}
+
+#line {
+  width: 0.7vw;
+  margin-top: -170px;
+  height: 23vh;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+#center-left {
+  /* background-color: red; */
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#center-left h1 {
+  font-size: 4vw;
+  text-transform: uppercase;
+  line-height: 70px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#center-left h3 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+#center-left p {
+  margin: 50px 0px;
+  font-size: 1vw;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+#center-left .button-1,
+#center-left .button-2 {
+  padding: 10px 20px;
+  font-size: 1vw;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 15px;
+  border: none;
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+#center-right img {
+  right: -120px;
+  bottom: 5%;
+  position: absolute;
+}
+
+.button-1 {
+  color: white;
+  background-color: var(--main-color);
+}
+.button-1:hover {
+  color: var(--main-color-2);
+  background-color: #fff;
+}
+
+.button-2 {
+  color: var(--main-color-2);
+}
+.button-2:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+/* CENTER */
+
+/* BOTTOM */
+#bottom {
+  margin-left: 84px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#bottom h4 {
+  color: var(--main-color);
+}
+#bottom p {
+  font-weight: 100;
+  color: white;
+  font-size: 15px;
+}
+/* BOTTOM */
+
+/* RESPONSIVE CODE */
+@media (max-width: 500px) {
+  #top h1,
+  #top i {
+    font-size: 30px;
+    margin-left: -20px;
+  }
+  #center {
+    margin: 10px 20px;
+  }
+  #line {
+    margin-top: -120px;
+    height: 130px;
+    width: 5px;
+  }
+  #center-left {
+    padding-left: 10px;
+    gap: 10px;
+  }
+  #center-left h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  #center-left h3 {
+    font-size: 20px;
+  }
+  #center-left p {
+    margin: 20px 0px;
+    font-size: 15px;
+  }
+  #center-left .button-1,
+  #center-left .button-2 {
+    padding: 5px 15px;
+    font-size: 11px;
+    margin-right: 15px;
+  }
+  #center-right {
+    right: -120px;
+    bottom: -80px;
+    position: absolute;
+  }
+  #bottom {
+    margin-top: 50px;
+    margin-left: 38px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #bottom h4 {
+    font-size: 10px;
+  }
+  #bottom p {
+    font-size: 6px;
+    padding-left: 1px;
+  }
+}
+
+@media (max-width: 1500px) {
+  #top h1,
+  #top i {
+    font-size: 30px;
+    margin-left: -20px;
+  }
+  #center {
+    margin: 10px 20px;
+  }
+  #line {
+    margin-top: -120px;
+    height: 130px;
+    width: 5px;
+  }
+  #center-left {
+    padding-left: 10px;
+    gap: 10px;
+  }
+  #center-left h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  #center-left h3 {
+    font-size: 20px;
+  }
+  #center-left p {
+    margin: 20px 0px;
+    font-size: 15px;
+  }
+  #center-left .button-1,
+  #center-left .button-2 {
+    padding: 5px 15px;
+    font-size: 11px;
+    margin-right: 15px;
+  }
+  #center-right {
+    right: -120px;
+    bottom: -80px;
+    position: absolute;
+  }
+  #bottom {
+    margin-top: 50px;
+    margin-left: 38px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #bottom h4 {
+    font-size: 10px;
+  }
+  #bottom p {
+    font-size: 6px;
+    padding-left: 1px;
+  }
+}
+/* RESPONSIVE CODE */
