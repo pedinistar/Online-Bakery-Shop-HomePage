@@ -61,6 +61,7 @@ body {
 }
 #top i:hover {
   color: white;
+  cursor: pointer;
 }
 /* TOP */
 
@@ -128,6 +129,7 @@ body {
   background-color: var(--main-color);
 }
 .button-1:hover {
+  cursor: pointer;
   color: var(--main-color-2);
   background-color: #fff;
 }
@@ -136,6 +138,7 @@ body {
   color: var(--main-color-2);
 }
 .button-2:hover {
+  cursor: pointer;
   color: white;
   background-color: var(--main-color);
 }
