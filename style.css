@@ -221,12 +221,15 @@ body {
   }
 }
 
+/* MEDIA QUERY */
 @media (max-width: 1500px) {
   #top h1,
   #top i {
     font-size: 30px;
     margin-left: -20px;
   }
+
+/*   CENTER STYLING  */
   #center {
     margin: 10px 20px;
   }
@@ -262,6 +265,8 @@ body {
     bottom: -80px;
     position: absolute;
   }
+
+/*   BOTTOM STYLING */
   #bottom {
     margin-top: 50px;
     margin-left: 38px;
